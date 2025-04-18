@@ -5,7 +5,7 @@ class Storage {
     this.#items = initialItems;
   }
 
-  getItemss() {
+  getItems() {
     return this.#items;
   }
 
@@ -19,7 +19,7 @@ class Storage {
 }
 
 const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems); // ["Nanitoids", "Prolonger", "Antigravitator"]
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
 storage.addItem("Droid");
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
 storage.removeItem("Prolonger");
